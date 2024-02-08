@@ -3,7 +3,8 @@
 class Persona{
     public string $nombre;
     public int $edad;
-
+    public string $correo;
+    public string $telefono;
     public function __construct(string $nombre, int $edad) {
         $this->nombre = $nombre;
         $this->edad = $edad;
@@ -13,6 +14,20 @@ class Persona{
         echo "Su nombre es:" . $this->nombre . " y su edad es:".$this->edad;
         echo"<br>";
     }
+
+    public function getCorreo(){
+        echo "el correo es:".$this->correo."<br>";
+}
+    public function setCorreo($correo){
+      echo "".$correo."<br>";
+    }
+    public function getTelefono(){
+        echo "el telèfono es".$this->telefono."<br>";
+    }
+    public function setTelefono($telefono){
+        echo "".$telefono."<br>";
+    }
+
 }
 
 class Estudiante extends Persona{
